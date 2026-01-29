@@ -35,7 +35,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" role="region" aria-label="Hero section">
         <div class="hero-background">
             <div class="stripe stripe-1"></div>
             <div class="stripe stripe-2"></div>
@@ -49,30 +49,35 @@
                     <span class="highlight">Burntwood</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Join Staffordshire's premier swimming club. Whether you're diving in for the first time or chasing championship dreams, we've got a lane for you.
+                    A warm, welcoming swimming community where every swimmer belongs. Whether you're discovering the water or chasing your goals, we celebrate your journey.
                 </p>
                 <div class="hero-buttons">
-                    <a href="membership.html" class="btn btn-primary">Join the Club</a>
-                    <a href="training.html" class="btn btn-secondary">View Training</a>
+                    <a href="membership.html" class="btn btn-primary">Start Your Journey</a>
+                    <a href="training.html" class="btn btn-secondary">Explore Our Squads</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
                         <div class="stat-number">55+</div>
-                        <div class="stat-label">Years of Excellence</div>
+                        <div class="stat-label">Years Supporting Our Community</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">4</div>
-                        <div class="stat-label">Training Sessions/Week</div>
+                        <div class="stat-label">Weekly Sessions</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">£39</div>
-                        <div class="stat-label">From Per Month</div>
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Personal Goals Supported</div>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="image-frame">
-                    <img src="images/Pool.png" alt="Burntwood Leisure Centre Pool" class="pool-image">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/hero/hero-action-1-landscape.jpg 1920w, images/hero/hero-action-1-landscape-alt.jpg 1920w">
+                        <source media="(min-width: 768px)" srcset="images/hero/hero-action-1-landscape.jpg 1200w">
+                        <source media="(max-width: 767px)" srcset="images/hero/hero-action-1-vertical.jpg 600w">
+                        <img src="images/hero/hero-action-1-landscape.jpg" alt="Freestyle swimmer captured mid-stroke, demonstrating powerful technique and athletic form in the pool" loading="eager" class="pool-image">
+                    </picture>
                     <div class="image-accent"></div>
                 </div>
             </div>
@@ -88,31 +93,52 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Who We Are</span>
-                <h2 class="section-title">Swimming Excellence Since 1969</h2>
+                <h2 class="section-title">A Community That Celebrates You</h2>
             </div>
             <div class="about-grid">
                 <div class="about-card">
                     <div class="card-icon">🏊‍♂️</div>
-                    <h3>All Ages Welcome</h3>
-                    <p>From 8 years old with no upper age limit. We believe swimming is a lifelong sport for everyone.</p>
+                    <h3>Every Swimmer Belongs</h3>
+                    <p>From age 8 with no upper limit. We celebrate swimmers at every stage of their journey, from first strokes to competitive excellence.</p>
                 </div>
                 <div class="about-card">
-                    <div class="card-icon">🏆</div>
-                    <h3>Competition Squad</h3>
-                    <p>Dedicated programme for competitive swimmers aiming to compete at regional and national levels.</p>
+                    <picture class="card-image">
+                        <source media="(min-width: 768px)" srcset="images/community/community-group-1-landscape.jpg">
+                        <source media="(max-width: 767px)" srcset="images/community/community-group-1-square.jpg">
+                        <img src="images/community/community-group-1-landscape.jpg" alt="Mixed age group of swimmers from development to competitive squads, smiling together in training gear, demonstrating club community" loading="lazy">
+                    </picture>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">📈</div>
+                    <h3>Your Progress Matters</h3>
+                    <p>We track and celebrate your personal achievements, no matter how big or small. Your growth is our success.</p>
+                </div>
+                <div class="about-card">
+                    <picture class="card-image">
+                        <source media="(min-width: 768px)" srcset="images/achievements/medal-1-landscape.jpg">
+                        <source media="(max-width: 767px)" srcset="images/achievements/medal-1-square.jpg">
+                        <img src="images/achievements/medal-1-landscape.jpg" alt="Young swimmer proudly displaying personal achievement moment, smiling with confidence after completing training goal" loading="lazy">
+                    </picture>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">💪</div>
-                    <h3>Fitness & Technique</h3>
-                    <p>Whether improving technique or staying fit, our qualified coaches tailor training to your goals.</p>
+                    <h3>Supportive & Inclusive</h3>
+                    <p>Our coaches prioritize wellbeing alongside performance. Train in a judgment-free environment built on encouragement.</p>
+                </div>
+                <div class="about-card">
+                    <picture class="card-image">
+                        <source media="(min-width: 768px)" srcset="images/wellbeing/wellbeing-support-landscape.jpg">
+                        <source media="(max-width: 767px)" srcset="images/wellbeing/wellbeing-support-square.jpg">
+                        <img src="images/wellbeing/wellbeing-support-landscape.jpg" alt="Coach providing encouraging support to swimmer, hands-on mentoring moment showing care and connection in training" loading="lazy">
+                    </picture>
                 </div>
             </div>
             <div class="cta-banner">
                 <div class="banner-content">
-                    <h3>Ready to Dive In?</h3>
-                    <p>Join a club with over 50 years of swimming heritage in Burntwood</p>
+                    <h3>More Than Just Training</h3>
+                    <p>Join a club where friendships form, confidence grows, and every member is valued</p>
                 </div>
-                <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                <a href="about.html" class="btn btn-outline">Learn Our Story</a>
             </div>
         </div>
     </section>
