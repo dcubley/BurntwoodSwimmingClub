@@ -1956,6 +1956,7 @@ section {
         transform: translateY(-200%);
         transition: var(--transition);
         z-index: 999;
+        display: flex;
     }
     
     .nav-menu.active {
